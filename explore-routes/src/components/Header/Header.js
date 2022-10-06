@@ -1,15 +1,17 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 const Header = () => {
     return (
         <div>
             <nav className='header'>
-                <Link to='/home'>Home</Link>
-                <Link to='/friends'>Friends</Link>
-                <Link to='/product'>Product</Link>
-                <Link to='/about'>About</Link>
+                <Button variant='primary'>Bootstrap</Button>
+                <Link to='/home'><Button variant='primary'>Home</Button> </Link>
+                <Link to='/friends'><Button variant='primary'>Friends</Button></Link>
+                <Link to='/product'> <Button variant='primary'>Product</Button></Link>
+                <Link to='/about'><Button variant='primary'>About</Button></Link>
             </nav>
         </div>
     );

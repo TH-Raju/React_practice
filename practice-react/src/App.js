@@ -1,27 +1,15 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Device from './components/Device/Device';
-import Steps from './components/Steps/Steps';
+import { Bars3Icon, HeartIcon, HomeIcon } from '@heroicons/react/24/solid'
+// import Device from './components/Device/Device';
+// import Steps from './components/Steps/Steps';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Device name="Huwei Y5 lite"></Device>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Steps></Steps>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <h1 className='text-5xl bg-slate-500 p-7'><Bars3Icon className="h-6 w-6 text-red-500" />Hello from tailwindcss<HomeIcon className="h-6 w-6 text-red-500" /></h1>
+      <p>Hello from paragraph</p>
     </div>
   );
 }
